@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 ol, ul {
   list-style: none;
@@ -115,6 +116,19 @@ nav li a:hover {
 .right-text{
 	width: 400px;
 	padding: 40px 0px;
+}
+
+h1 {
+	line-height: 1em;
+	color: #252525;
+	font-size: 1.5em;
+}
+
+p {
+	color: #737373;
+	font-size: 0.9em;
+	padding-top: 15px;
+	line-height: 1.4em;
 }
 
 .left-text {
