@@ -44,6 +44,8 @@ table {
 }
 /* @end */
 
+/* @group Scaffolding */
+
 header {
 	position: fixed;
 	width: 100%;
@@ -90,13 +92,15 @@ nav li a:hover {
 	-webkit-box-shadow: 0 1px 5px rgba(83, 83, 83, 0.73);
 	box-shadow: 0 1px 5px rgba(83, 83, 83, 0.73);
 } 
-.wrapper {
-	margin: 50px auto 20px auto;
-	background-color: #535353;
-	height: 300px;
-	border-radius: 4px;
-	width: 940px;
+
+.hero {
+	margin: 40px auto 20px auto;
+  height: 800px;
+	width: 100%;
 	top: 20px;
+  background-image: -moz-linear-gradient(90deg, white 0%, #dbdbdb 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#dbdbdb));
+  text-align: center;
 } 
 
 .title {
@@ -143,4 +147,10 @@ p {
 .right {
 	float: right;
 	margin-right: 100px;
+}
+
+/* @end */
+
+.shelves {
+  margin-top: 40px;
 }
