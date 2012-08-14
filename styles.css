@@ -98,8 +98,8 @@ nav li a:hover {
   height: 800px;
 	width: 100%;
 	top: 20px;
-  background-image: -moz-linear-gradient(90deg, white 0%, #dbdbdb 100%);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#dbdbdb));
+  background-image: -moz-linear-gradient(90deg, white 0%, #f9f9f9 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#f9f9f9));
   text-align: center;
 } 
 
@@ -112,20 +112,33 @@ nav li a:hover {
 	height: 280px;
 }
 
-.features img {
-	width: 300px;
-	padding-top: 20px;
-}
-
 .right-text{
-	width: 400px;
+	width: 450px;
 	padding: 40px 0px;
 }
 
-h1 {
+h2 {
 	line-height: 1em;
 	color: #252525;
 	font-size: 1.5em;
+	padding: 10px;
+	padding-left: 42px;
+}
+
+h2.lock {
+  background: url(img/lock.svg) no-repeat 0px;
+  background-size: 32px;
+}
+
+h2.share {
+  background: url(img/share.svg) no-repeat 0px;
+  background-size: 32px;
+}
+
+h2.network {
+  background: url(img/network.svg) no-repeat 0 8px;
+  background-size: 42px;
+  padding-left: 58px;
 }
 
 p {
@@ -136,7 +149,7 @@ p {
 }
 
 .left-text {
-	
+	width: 450px;
 }
 
 .left {
@@ -153,4 +166,10 @@ p {
 
 .shelves {
   margin-top: 40px;
+}
+
+.screenshot {
+  width: 200px;
+  margin-top: 40px;
+  border: 1px solid #484848;
 }
