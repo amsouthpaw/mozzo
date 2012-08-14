@@ -103,6 +103,10 @@ nav li a:hover {
   text-align: center;
 } 
 
+.tagline p {
+	margin-top: 1em;
+}
+
 .title {
 	padding: 20px;
 }
@@ -128,11 +132,23 @@ h1 {
 	font-size: 1.5em;
 }
 
-p {
+.features p {
 	color: #737373;
 	font-size: 0.9em;
 	padding-top: 15px;
 	line-height: 1.4em;
+}
+
+.features ul {
+	margin-top: 1.2em;
+	margin-left: 30px;
+}
+
+.features li {
+	list-style: circle;
+	color: #737373;
+	font-size: 0.9em;
+	margin-bottom: 5px;
 }
 
 .left-text {
@@ -148,6 +164,14 @@ p {
 	float: right;
 	margin-right: 100px;
 }
+
+footer div{
+	color: #434343;
+	font-size: 0.8em;
+	width: 940px;
+	margin: 20px auto;
+}
+
 
 /* @end */
 
