@@ -63,7 +63,7 @@ header img {
 }
 
 nav {
-  width: 500px;
+  width: 300px;
   margin: 10px auto;
   position: relative;
   float: right;
@@ -95,7 +95,7 @@ nav li a:hover {
 
 .hero {
 	margin: 40px auto 20px auto;
-  height: 800px;
+  height: 700px;
 	width: 100%;
 	top: 20px;
   background-image: -moz-linear-gradient(90deg, white 0%, #f9f9f9 100%);
@@ -125,17 +125,17 @@ h2 {
 	padding-left: 42px;
 }
 
-h2.lock {
+h2#lock {
   background: url(img/lock.svg) no-repeat 0px;
   background-size: 32px;
 }
 
-h2.share {
+h2#share {
   background: url(img/share.svg) no-repeat 0px;
   background-size: 32px;
 }
 
-h2.network {
+h2#network {
   background: url(img/network.svg) no-repeat 0 8px;
   background-size: 42px;
   padding-left: 58px;
