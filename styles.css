@@ -51,6 +51,10 @@ a {
 
 /* @group Scaffolding */
 
+body {
+  background-color: whitesmoke;
+}
+
 header {
 	position: fixed;
 	width: 100%;
@@ -61,6 +65,7 @@ header {
 	-moz-box-shadow: 0 1px 3px rgba(102, 102, 102, 0.6);
 	-webkit-box-shadow: 0 1px 3px rgba(102, 102, 102, 0.6);
 	box-shadow: 0 1px 3px rgba(102, 102, 102, 0.6);
+	z-index: 100;
 }
 
 header img {
@@ -89,6 +94,13 @@ nav li a:hover {
 	color: #989898;
 }
  
+.container {
+  width: 940px;
+  margin: auto;
+  overflow: visible;
+  position: relative;
+}
+ 
 .content {
 	width: 940px;
 	margin: 20px auto;
@@ -96,24 +108,43 @@ nav li a:hover {
 	-moz-box-shadow: 0 1px 5px rgba(83, 83, 83, 0.73);
 	-webkit-box-shadow: 0 1px 5px rgba(83, 83, 83, 0.73);
 	box-shadow: 0 1px 5px rgba(83, 83, 83, 0.73);
+  background-color: white;
 } 
 
 .hero {
   height: 400px;
   text-align: left;
-  border: 1px solid #6a6a6a;
-  margin: 80px auto;
-  background-color: #7a92a1;
+  border: 1px solid #404040;
+  margin: 130px auto;
   color: #ffffff;
-  -moz-box-shadow: inset 0 -50px 262px rgba(0, 0, 0, 0.38);
-  -webkit-box-shadow: inset 0 -50px 262px rgba(0, 0, 0, 0.38);
-  box-shadow: inset 0 -50px 262px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.51), inset 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 -50px 262px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.51), inset 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 -50px 262px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.51), inset 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 -50px 262px rgba(0, 0, 0, 0.38);
+  background: url(img/noise.png) #7a92a1;
 }
 
 .hero_text {
   margin-top: 100px;
   float: left;
-  margin-left: 100px;
+  margin-left: 500px;
+  position: absolute;
+  right: ;
+}
+
+#letters {
+  width: 100%; height: 330px;
+  left: -110px;
+  background: url(img/letters-03.png) no-repeat left 20px;
+  position: absolute;
+  top: -250px;
+  z-index: 10;
+}
+
+.shelves {
+  margin: 40px 60px;
+  float: left;
+  position: absolute;
+  z-index: 20;
 }
 
 .hero h2, .hero p {
@@ -124,41 +155,47 @@ nav li a:hover {
 .hero h2 {
   font-size: 1.8em;
   text-shadow: 0 1px 2px #000000;
-  margin-bottom: 4px;
+  margin-bottom: 12px;
 }
 
 .hero p {
   font-size: .8em;
-  color: #cccccc;
-  text-shadow: 0 1px 2px #000000;
+  color: #4a4a4a;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   width: 260px;
   letter-spacing: .01em;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .hero a {
-  color: #ededed;
+  color: #e3e3e3;
   margin: 12px 0;
   font-size: 1.2em;
   -top: 80px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.66);
 }
 
 .hero button {
-  border: 1px solid #a0631b;
   font-size: 1.6em;
-  color: #fefbf8;
-  margin-top: 40px;
-  padding: 8px 20px;
+  color: #ffffff;
+  margin-top: 10px;
+  padding: 10px 32px;
   background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.23) 0%, rgba(255, 255, 255, 0.1) 100%) #fb9b1f;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.23)), to(rgba(255, 255, 255, 0.1))) #fb9b1f;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.57), 0 2px 4px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.57), 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.57), 0 2px 4px rgba(0, 0, 0, 0.45);
+  border: 0 solid #dead72;
+}
+
+.hero button:hover {
+  background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.23) 0%, rgba(255, 255, 255, 0.1) 53.5%) #fb9b1f;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.23)), color-stop(0.535, rgba(255, 255, 255, 0.1))) #fb9b1f;
 }
 
 .title {
@@ -221,11 +258,6 @@ p {
 }
 
 /* @end */
-
-.shelves {
-  margin-top: 40px;
-  float: left;
-}
 
 .screenshot {
   width: 200px;
