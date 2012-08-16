@@ -73,7 +73,7 @@ header img {
 }
 
 nav {
-  width: 300px;
+  width: 324px;
   margin: 10px auto;
   position: relative;
   float: right;
@@ -112,10 +112,10 @@ nav li a:hover {
 } 
 
 .hero {
-  height: 400px;
+  height: 500px;
   text-align: left;
   border: 1px solid #404040;
-  margin: 130px auto;
+  margin: 130px auto 40px;
   color: #ffffff;
   -moz-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.51), inset 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 -50px 262px rgba(0, 0, 0, 0.38);
   -webkit-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.51), inset 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 -50px 262px rgba(0, 0, 0, 0.38);
@@ -140,13 +140,31 @@ nav li a:hover {
   z-index: 10;
 }
 
-#shelves {
+#shelf1 {
   width: 400px; height: 300px;
   position: absolute;
-  background-image: url(img/shelves.png);
-  top: 240px;
-  left: 60px;
+  top: 340px;
+  left: 40px;
   z-index: 30;
+  background: url(img/shelf-05.png) no-repeat;
+}
+
+#shelf2 {
+  width: 400px; height: 300px;
+  position: absolute;
+  top: 340px;
+  left: 300px;
+  z-index: 30;
+  background: url(img/shelf-06.png) no-repeat;
+}
+
+#shelf3 {
+  width: 400px; height: 300px;
+  position: absolute;
+  top: 348px;
+  left: 640px;
+  z-index: 30;
+  background: url(img/shelf-07.png) no-repeat;
 }
 
 .shelves {
@@ -216,6 +234,14 @@ nav li a:hover {
 	height: 280px;
 }
 
+.security {
+  height: 420px;
+}
+
+.security img {
+  margin-top: 100px;
+}
+
 .right-text{
 	width: 450px;
 	padding: 40px 0px;
@@ -240,9 +266,8 @@ h2#share {
 }
 
 h2#network {
-  background: url(img/network.svg) no-repeat 0 8px;
-  background-size: 42px;
-  padding-left: 58px;
+  background: url(img/network.svg) no-repeat 0;
+  background-size: 32px;
 }
 
 p {
@@ -250,6 +275,11 @@ p {
 	font-size: 0.9em;
 	padding-top: 15px;
 	line-height: 1.4em;
+}
+
+p a {
+  color: #121212;
+  border-bottom: 1px dotted #121212;
 }
 
 .left-text {
@@ -272,4 +302,14 @@ p {
   width: 200px;
   margin-top: 40px;
   border: 1px solid #484848;
+}
+
+ul.logos li {
+  display: inline-block;
+  margin: 10px;
+}
+
+ul.logos li img {
+  display: inline-block;
+  height: 20px;
 }
