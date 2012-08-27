@@ -273,6 +273,10 @@ button:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.23)), color-stop(0.535, rgba(255, 255, 255, 0.1))) #fb9b1f;
 }
 
+.tagline p {
+	margin-top: 1em;
+}
+
 .title {
 	padding: 20px;
 }
@@ -335,7 +339,7 @@ h2#network {
   background-size: 32px;
 }
 
-p {
+.features p {
 	color: #737373;
 	font-size: 0.9em;
 	padding-top: 15px;
@@ -345,6 +349,18 @@ p {
 p a {
   color: #121212;
   border-bottom: 1px dotted #121212;
+}
+
+.features ul {
+	margin-top: 1.2em;
+	margin-left: 30px;
+}
+
+.features li {
+	list-style: circle;
+	color: #737373;
+	font-size: 0.9em;
+	margin-bottom: 5px;
 }
 
 .left-text {
@@ -360,6 +376,14 @@ p a {
 	float: right;
 	margin-right: 100px;
 }
+
+footer div{
+	color: #434343;
+	font-size: 0.8em;
+	width: 940px;
+	margin: 20px auto;
+}
+
 
 /* @end */
 
